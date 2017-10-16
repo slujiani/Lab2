@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="cn.broccoligo" namespace="/" extends="structs-default">
+        <action name="search" class="cn.broccoligo.searchAction" method="execute">
+            <result name="success">/authorAllBook.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+    <include file="struts-default.xml"/>
+</struts>
